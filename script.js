@@ -1,5 +1,22 @@
 const makeChange = (c) => {
   // your name here
+
+	let q=c/25;
+	c=c%25;
+	let d=c/10;
+	c=c/10;
+	let n=c/5;
+	c=c%5;
+	let p=c/1;
+
+	let obj = {
+    "q": q,
+    "d": d,
+    "n": n,
+	"p": p
+};
+
+	console.log(obj);
 };
 
 // Do not the change the code below
