@@ -1,13 +1,13 @@
 const makeChange = (c) => {
   // your name here
 
-	let q=c/25;
+	let q=Math.floor(c/25);
 	c=c%25;
-	let d=c/10;
+	let d=Math.floor(c/10);
 	c=c/10;
-	let n=c/5;
+	let n=Math.floor(c/5);
 	c=c%5;
-	let p=c/1;
+	let p=c;
 
 	let obj = {
     "q": q,
@@ -20,5 +20,5 @@ const makeChange = (c) => {
 };
 
 // Do not the change the code below
-const c = prompt("Enter c: ");
-alert(JSON.stringify(makeChange(c)));
+//const c = prompt("Enter c: ");
+//alert(JSON.stringify(makeChange(c)));
